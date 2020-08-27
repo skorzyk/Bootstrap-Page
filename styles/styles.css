@@ -1,0 +1,780 @@
+@font-face {
+  font-family: 'Gotham Rounded Bold';
+
+  src: url('/font/Gotham_Rounded_Bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Gotham Rounded Book';
+
+  src: url('/font/Gotham\ Rounded\ Book.otf') format('opentype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.jumbotron {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-image: url('/images/Livello\ 1@1X.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.fixed-top {
+  top: 30px;
+  right: 90px;
+}
+
+.navbar {
+  padding-left: 2rem;
+  z-index: 6;
+}
+
+.navbar-toggler-icon {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.nav-link {
+  font-family: 'Gotham Rounded Bold', sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  transition: 0.2s ease-in;
+  letter-spacing: 1px;
+}
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbarChanged {
+  background-color: rgba(9, 110, 93, 0.7);
+  color: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  padding: 6rem 2rem;
+}
+
+.navbarTogglerFixed {
+  position: fixed;
+  top: 40px;
+  left: 30px;
+  color: #000;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: none;
+}
+
+.fa-bars {
+  color: #fff;
+  font-size: 2.5rem;
+  text-shadow: 0 0 5px #000;
+}
+
+.menu-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.nav-link:hover {
+  color: #ffa200 !important;
+}
+
+.nav-link:active {
+  color: #af7106 !important;
+}
+
+.nav-link:focus {
+  color: #0c5a4a !important;
+}
+
+.header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  color: #fff;
+  font-family: 'Gotham Rounded Bold', sans-serif;
+}
+
+.header__heading {
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.8;
+  letter-spacing: 2px;
+}
+
+.header__desc {
+  text-transform: lowercase;
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0.8;
+  letter-spacing: 1px;
+}
+
+.button__header {
+  width: 150px;
+  height: 35px;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  margin: 1rem auto;
+  font-family: 'Gotham Rounded Bold';
+  transition: 0.2s ease-in;
+}
+
+.button__header:hover {
+  background-color: #127a65;
+}
+
+.medias {
+  position: absolute;
+  bottom: 50px;
+  right: 50%;
+  transform: translateX(50%);
+  display: flex;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.medias__icon {
+  padding: 0.5rem;
+}
+
+.row {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.hand__section {
+  max-width: 1200px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.hand__heading {
+  font-family: 'Gotham Rounded Bold', sans-serif;
+  color: #16a085;
+  font-size: 2rem;
+}
+
+.hand__desc {
+  font-family: 'Gotham Rounded Book', sans-serif;
+  font-size: 1.2rem;
+  line-height: 3rem;
+}
+
+.hand__image {
+  width: 70%;
+  padding: 2rem;
+  margin: 0 auto;
+  display: block;
+}
+
+.button__hand {
+  margin: 1rem 0;
+}
+
+.second__section {
+  background-color: #f5f6f7;
+  padding: 1rem 2rem;
+  overflow: hidden;
+}
+
+.carousel-control-prev--first {
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 70%;
+  width: 50px;
+  height: 50px;
+}
+.carousel-control-next--first {
+  opacity: 1;
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  width: 50px;
+  height: 50px;
+}
+
+.carousel-control-prev-icon {
+  background-image: url('../images/fa-angle-left\ copia@1X.png');
+  width: 10px;
+}
+
+.carousel-control-next-icon {
+  background-image: url('../images/fa-angle-right\ copia@1X.png');
+  width: 10px;
+}
+
+.carousel-inner {
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel-inner-second {
+  position: relative;
+  margin: 0 auto;
+}
+
+.second__second-image {
+  width: 30%;
+}
+
+.carousel-item {
+  padding: 0 2rem;
+}
+
+.third__section {
+  margin: 0 auto;
+}
+
+.our__community {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 3rem auto;
+}
+
+.third__section-heading {
+  padding: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Gotham Rounded Bold';
+  text-align: center;
+}
+
+.third__section-desc {
+  font-family: 'Gotham Rounded Book';
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.carousel-control-prev--second {
+  opacity: 1;
+  position: absolute;
+  top: -40px;
+  left: 70%;
+  width: 50px;
+  height: 50px;
+}
+.carousel-control-next--second {
+  opacity: 1;
+  position: absolute;
+  top: -40px;
+  left: 80%;
+  width: 50px;
+  height: 50px;
+}
+
+.third__section-img {
+  max-width: 600px;
+  max-height: 337px;
+}
+
+.items {
+  width: 90%;
+  margin: 0px auto;
+  margin-top: 100px;
+}
+
+.slick-slide {
+  margin: 10px;
+}
+
+.slick-slide img {
+  width: 100%;
+  border: 0px solid #fff;
+}
+
+.container__contact {
+  width: 100vw;
+  height: 70vh;
+  position: relative;
+  margin-top: 2rem;
+}
+
+.container__contact::after {
+  content: '';
+  background-image: url('/images/smartphone-381237_1920.jpg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: grayscale(0.5);
+  background-attachment: fixed;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact__heading {
+  font-size: 2.5rem;
+  padding: 1rem;
+  font-family: 'Gotham Rounded Bold';
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 1px #000;
+}
+
+.contact__input {
+  width: 200px;
+  height: 30px;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  font-family: 'Gotham Rounded Book';
+  letter-spacing: 1px;
+  border-radius: 2px;
+}
+
+.contact__input:focus {
+  outline: #127a65;
+  border: 1px solid #127a65;
+}
+
+.contact__input::-webkit-input-placeholder {
+  color: #000;
+}
+
+.contact__button {
+  width: 40px;
+  height: 30px;
+  background-color: #127a65;
+  border: 1px solid #127a65;
+  border-radius: 2px;
+  transition: 0.2s ease-in;
+}
+
+.contact__button:hover {
+  background-color: #0f6151;
+  border: 1px solid #0f6151;
+}
+
+.contact__button:focus {
+  outline: #127a65;
+  border: 1px solid #127a65;
+}
+
+.fa-check {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.store {
+  padding: 5rem 1rem;
+  background-color: #f5f6f7;
+}
+
+.input-group {
+  justify-content: center;
+}
+
+.store__heading {
+  font-family: 'Gotham Rounded Bold';
+  padding: 2rem 2rem 1rem 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.store__desc {
+  padding: 0 2rem 1rem 2rem;
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.store__input {
+  border: 1px solid #127a65;
+  height: 30px;
+  width: 200px;
+  max-width: 300px;
+}
+
+.store__input::-webkit-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Gotham Rounded Book', sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.store__input:disabled {
+  background-color: #127a65;
+}
+
+.store__button:hover {
+  background-color: #127a65;
+  border-color: #127a65;
+}
+
+.store__button:focus {
+  border-color: #127a65;
+  box-shadow: none;
+}
+
+.store__button:active {
+  background-color: #127a65;
+  border-color: #127a65;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+  background-color: #127a65;
+  border-color: #127a65;
+}
+
+.store__button {
+  width: 40px;
+  height: 30px;
+  background-color: #0f6151;
+  border: 1px solid #0f6151;
+}
+
+.fa-android,
+.fa-apple {
+  color: #fff;
+  font-size: 1.4rem;
+}
+
+.footer {
+  width: 100%;
+}
+
+.row.row__footer {
+  padding: 1rem 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer__desc--group {
+  padding: 0;
+}
+
+.footer__desc {
+  font-family: 'Gotham Rounded Bold', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+}
+
+.footer__desc--first,
+.footer__desc--second {
+  border-right: 2px solid #127a65;
+}
+
+.footer__rights {
+  font-family: 'Gotham Rounded Bold', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  padding: 0 0.5rem;
+}
+
+.container.footer__container {
+  width: 90%;
+  margin-top: 2rem;
+  max-width: 1900px;
+  padding-left: 0;
+}
+
+.footer__img {
+  margin-right: 1rem;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 20px;
+  background-color: #127a65;
+  border-radius: 10px;
+}
+
+@media (min-width: 640px) {
+  .header__heading {
+    font-size: 3rem;
+  }
+  .header__desc {
+    font-size: 1.6rem;
+  }
+  .button__header {
+    width: 180px;
+    height: 45px;
+    font-size: 1.4rem;
+  }
+  .hand__section {
+    padding: 2rem 3rem;
+    margin-left: 2rem;
+  }
+  .hand__heading {
+    font-size: 2.5rem;
+  }
+
+  .hand__desc {
+    font-size: 1.4rem;
+  }
+
+  .second__heading {
+    font-size: 2.5rem;
+  }
+
+  .second__desc {
+    font-size: 1.4rem;
+  }
+
+  .carousel-inner {
+    padding: 2rem 3rem;
+    margin-right: 2rem;
+  }
+
+  .carousel-control-prev--second {
+    top: -40px;
+  }
+  .carousel-control-next--second {
+    top: -40px;
+  }
+
+  .third__section-heading {
+    font-size: 2rem;
+  }
+
+  .third__section-desc {
+    font-size: 1.4rem;
+  }
+  .footer__container {
+    width: 100%;
+  }
+  .row.row__footer {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .second__second-image {
+    width: 50%;
+  }
+
+  .carousel-control-prev--second {
+    left: 5%;
+  }
+  .carousel-control-next--second {
+    left: 10%;
+  }
+  .row.row__footer {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar-nav {
+    width: 70%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .navbarChanged {
+    border-radius: 10px;
+    color: #000;
+    padding: 1rem 0;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  .fixed-top {
+    top: 5px;
+    right: 5px;
+  }
+
+  .nav-item-first {
+    order: 1;
+  }
+  .nav-item-second {
+    order: 2;
+  }
+  .nav-item-fifth {
+    order: 3;
+  }
+  .nav-item-third {
+    order: 4;
+  }
+  .nav-item-fourth {
+    order: 5;
+  }
+  .header__heading {
+    font-size: 3.5rem;
+  }
+  .header__desc {
+    font-size: 2rem;
+  }
+  .button__header {
+    width: 200px;
+    height: 50px;
+  }
+  .medias__icon {
+    padding: 1.5rem;
+  }
+  .hand__section {
+    margin-left: 4rem;
+  }
+  .hand__heading {
+    font-size: 2.8rem;
+  }
+
+  .hand__desc {
+    font-size: 1.6rem;
+    padding: 2rem 0;
+  }
+  .second__second-image {
+    width: 30%;
+  }
+
+  .third__section {
+    margin-top: 3rem;
+    padding: 3rem;
+  }
+  .carousel-control-prev--first {
+    left: 70%;
+  }
+  .carousel-control-next--first {
+    left: 75%;
+  }
+
+  .contact__heading {
+    font-size: 3rem;
+  }
+
+  .contact__input {
+    width: 300px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .contact__button {
+    width: 50px;
+    height: 40px;
+  }
+
+  .fa-check {
+    font-size: 1.6rem;
+  }
+
+  .store__row {
+    max-width: 800px;
+  }
+
+  .store__desc {
+    font-size: 1.4rem;
+  }
+
+  .store__input {
+    height: 40px;
+  }
+
+  .store__button {
+    width: 50px;
+    height: 40px;
+  }
+  .store__input::-webkit-input-placeholder {
+    font-size: 1.4rem;
+  }
+
+  .fa-android,
+  .fa-apple {
+    font-size: 1.6rem;
+  }
+  .footer__container {
+    width: 100%;
+  }
+  .row.row__footer {
+    padding: 1rem 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row {
+    padding: 2rem 5rem;
+  }
+  .third__section {
+    padding: 4rem;
+  }
+
+  .hand__phone-image {
+    width: 40%;
+  }
+
+  .carousel-control-prev--first {
+    left: 75%;
+  }
+  .carousel-control-next--first {
+    left: 80%;
+  }
+  .footer__container {
+    width: 100%;
+  }
+  .row.row__footer {
+    padding: 1rem 1rem;
+  }
+
+  .footer__img {
+    margin-left: 5rem;
+  }
+}

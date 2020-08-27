@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    />
+  </head>
+  <body>
+    <div class="jumbotron" id="home">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <div class="navbar-toggler-icon">
+            <span class="fas fa-bars"></span>
+          </div>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item nav-item-first">
+              <a class="nav-link" href="#home" id="homeButton">Home </a>
+            </li>
+            <li class="nav-item nav-item-second">
+              <a class="nav-link" href="#first_section" id="photoApp"
+                >Photoapp</a
+              >
+            </li>
+            <li class="nav-item nav-item-third">
+              <a class="nav-link" href="#second__section" id="design">Design</a>
+            </li>
+            <li class="nav-item nav-item-fourth">
+              <a class="nav-link" href="#download">Download</a>
+            </li>
+            <li class="nav-item nav-item-fifth">
+              <img
+                src="images/icons/Livello 2.svg"
+                alt="camera icon"
+                class="menu-icon"
+              />
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <header class="header">
+        <h1 class="header__heading">Your Life, a photo</h1>
+        <p class="header__desc">print your life in a simple photo</p>
+        <button class="button__header">get started</button>
+      </header>
+      <div class="medias">
+        <img
+          src="./images/icons/fa-twitter@1X.png"
+          alt="twitter icon"
+          class="medias__icon"
+        />
+
+        <img
+          src="./images/icons/fa-flickr@1X.png"
+          alt="flickr icon"
+          class="medias__icon"
+        />
+        <img
+          src="./images/icons/fa-dribbble@1X.png"
+          alt="dribble icon"
+          class="medias__icon"
+        />
+      </div>
+    </div>
+
+    <div class="row" id="first_section">
+      <div
+        class="col-12 col-md-6"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <section class="hand__section">
+          <h2 class="hand__heading">Present your life with a simple photo</h2>
+          <p class="hand__desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+            voluptates ullam porro harum fuga, animi quod. Possimus repellat
+            quisquam, ipsum aperiam expedita sunt et deserunt maiores, corporis
+            libero rem voluptatem?
+          </p>
+          <button class="button__header button__hand">get started</button>
+        </section>
+      </div>
+      <div
+        class="col-12 col-md-6"
+        data-aos="fade-left"
+        data-aos-duration="1000"
+      >
+        <div class="hand__image--wrapper">
+          <img
+            src="images/hand.jpg"
+            alt="image hand with phone"
+            class="hand__image hand__phone-image"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="row second__section"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+      id="second__section"
+    >
+      <div class="col-12 col-md-6">
+        <img
+          src="./images/Flat iPhone 5C Mock Up@1X.png"
+          alt="image hand with phone"
+          class="hand__image second__second-image"
+        />
+      </div>
+      <div class="col-12 col-md-6">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h2 class="hand__heading second__heading">Design</h2>
+              <p class="hand__desc second__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                voluptates ullam porro harum fuga, animi quod. Possimus repellat
+                quisquam, ipsum aperiam expedita sunt et deserunt maiores,
+                corporis libero rem voluptatem?
+              </p>
+              <button class="button__header second__section-button">
+                learn more
+              </button>
+            </div>
+            <div class="carousel-item">
+              <h2 class="hand__heading second__heading">Photo Album</h2>
+              <p class="hand__desc second__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                voluptates ullam porro harum fuga, animi quod. Possimus repellat
+                quisquam, ipsum aperiam expedita sunt et deserunt maiores,
+                corporis libero rem voluptatem?
+              </p>
+              <button class="button__header second__section-button">
+                learn more
+              </button>
+            </div>
+            <div class="carousel-item">
+              <h2 class="hand__heading second__heading">Posters</h2>
+              <p class="hand__desc second__desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                voluptates ullam porro harum fuga, animi quod. Possimus repellat
+                quisquam, ipsum aperiam expedita sunt et deserunt maiores,
+                corporis libero rem voluptatem?
+              </p>
+              <button class="button__header second__section-button">
+                learn more
+              </button>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev carousel-control-prev--first"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon carousel-control-prev-icon--first"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next carousel-control-next--first"
+            href="#carouselExampleControls"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon carousel-control-next-icon--first"
+              aria-hidden="true"
+            ></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="row third__section" data-aos="fade-up" data-aos-duration="1000">
+      <div class="col-12 col-lg-6">
+        <div class="our__community">
+          <img src="/images/icons/Livello 4@1X.png" alt="camera icon green" />
+          <h3 class="third__section-heading">our community</h3>
+          <p class="third__section-desc">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod,
+            illum quasi hic fugit earum id, dignissimos quidem fugiat velit
+            cumque corporis vero.
+          </p>
+        </div>
+      </div>
+      <div class="col">
+        <div
+          id="carouselExampleControlsSecond"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner carousel-inner-second">
+            <div class="carousel-item col-lg-10 active">
+              <img
+                src="images/autumn-2021154_1280.jpg"
+                class="d-block w-100 .third__section-img"
+                alt="lake in autumn"
+              />
+            </div>
+            <div class="carousel-item col-lg-10">
+              <img
+                src="images/beach-1236581_1280.jpg"
+                class="d-block w-100 .third__section-img"
+                alt="picture of beach"
+              />
+            </div>
+            <div class="carousel-item col-lg-10">
+              <img
+                src="images/canyon-1740973_1280.jpg"
+                class="d-block w-100 .third__section-img"
+                alt="picutre of canyon"
+              />
+            </div>
+            <div class="carousel-item col-lg-10">
+              <img
+                src="images/forest-931706_1280.jpg"
+                class="d-block w-100 .third__section-img"
+                alt="picutre of forest"
+              />
+            </div>
+            <div class="carousel-item col-lg-10">
+              <img
+                src="images/hintersee-3601004_1280.jpg"
+                class="d-block w-100 .third__section-img"
+                alt="picutre of lake"
+              />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev carousel-control-prev--second"
+            href="#carouselExampleControlsSecond"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next carousel-control-next--second"
+            href="#carouselExampleControlsSecond"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container__contact">
+      <section class="contact">
+        <h2 class="contact__heading">Subscribe to us community</h2>
+        <div class="row">
+          <input type="email" placeholder="your email" class="contact__input" />
+          <button class="contact__button">
+            <span class="fas fa-check"></span>
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <section
+      class="store"
+      data-aos="fade-up"
+      data-aos-duration="1000"
+      id="download"
+    >
+      <h2 class="store__heading">Download it</h2>
+      <p class="store__desc">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+        adipisci quibusdam quis distinctio quo illo voluptatem odit possimus
+        eveniet! Mollitia asperiores adipisci maiores quis quidem officiis ullam
+        sapiente alias est!
+      </p>
+      <div class="container">
+        <div class="row store__row">
+          <div class="col-md">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control store__input"
+                placeholder="apple store"
+                aria-label="apple store"
+                aria-describedby="button-addon2"
+                disabled
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary store__button"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <span class="fab fa-apple"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control store__input"
+                placeholder="play store"
+                aria-label="play store"
+                aria-describedby="button-addon2"
+                disabled
+              />
+              <div class="input-group-append">
+                <button
+                  class="btn btn-outline-secondary store__button"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <span class="fab fa-android"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container footer__container">
+      <footer class="footer">
+        <div class="row row__footer">
+          <div class="col-10">
+            <div class="container">
+              <div class="col footer__desc--group">
+                <div class="row row__footer">
+                  <p class="footer__desc footer__desc--first">credits</p>
+                  <p class="footer__desc footer__desc--second">privacy</p>
+                  <p class="footer__desc">our teams</p>
+                </div>
+                <div class="col footer__desc--group">
+                  <div class="row row__footer">
+                    <p class="footer__rights">
+                      Copyright by phototime - all right reserved
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <img
+              src="/images/icons/Livello 4@1X.png"
+              alt="camera icon green"
+              class="footer__img"
+            />
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/scrolling.js"></script>
+  </body>
+</html>
